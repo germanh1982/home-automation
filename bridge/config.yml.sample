@@ -1,0 +1,16 @@
+influxdb:
+  token: "*** HIDDEN ***"
+  bucket: "home"
+  org: "home"
+  url: "http://influxdb:8086"
+
+logging:
+  level: "INFO"
+
+mqtt:
+  host: "localhost"
+  auth: null
+  receive_topic: "environmental/#"
+
+data:
+  measurement_name: "environmental"
