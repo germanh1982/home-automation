@@ -7,6 +7,9 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
     restart: always
+    secrets:
+      - source: bridge-config
+        target: config.yml
 
   influxdb:
     image: influxdb:alpine
@@ -28,3 +31,7 @@ services:
 
 volumes:
   influx-data:
+
+secrets:
+  bridge-config:
+    file: bridge-config.yml

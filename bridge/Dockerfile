@@ -13,4 +13,4 @@ RUN bin/pip3 install -r REQUIREMENTS
 
 COPY main.py .
 
-CMD ["bin/python3", "main.py"]
+CMD ["bin/python3", "main.py", "/run/secrets/config.yml"]
