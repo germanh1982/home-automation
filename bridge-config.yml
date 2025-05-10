@@ -1,0 +1,16 @@
+influxdb:
+  token: "aqece41MRt-wGiKkdY7A7n1FPEMAj7ahiZVPD8_TEAKvBHfCPkLxQIf7RoNrG3dGEYECSuSZQZP0GD-Q8bxe0w=="
+  bucket: "home"
+  org: "home"
+  url: "http://influxdb:8086"
+
+logging:
+  level: "DEBUG"
+
+mqtt:
+  host: "mosquitto"
+  auth: null
+  receive_topic: "environmental/#"
+
+data:
+  measurement_name: "environmental"
